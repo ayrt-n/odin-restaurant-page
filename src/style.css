@@ -1,0 +1,109 @@
+/* Basic html+body styling */
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  box-sizing: border-box;
+  background-image: url(./pizza-background.jpg);
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Flex wrapper to position sections of document */
+#content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgba(127, 29, 29, 0.75);
+  color: #fff;
+  font-weight: 800;
+  position: relative;
+  z-index: 30;
+  min-height: 3.25rem;
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar-brand {
+  min-height: 3.25rem;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.navbar-menu {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.navbar-item {
+  font-size: min(2rem, calc(1rem + 0.75vw));
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+a.navbar-item:focus, a.navbar-item:focus-within,
+a.navbar-item:hover, a.navbar-item.is-active {
+  background-color: rgba(127, 29, 29, 0.85);
+}
+
+.logo {
+  width: 2.5rem;
+  height: auto;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(360deg);
+  }
+  to {
+      transform:rotate(0deg);
+  }
+}
+
+/* Main section styling */
+.main-section {
+  display: flex;
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 6px;
+  background-color: rgba(127, 29, 29, 0.85);
+  color: #fff;
+  padding: 2rem 3rem;
+}
+
+@media screen and (max-width: 425px) {
+  .main-section {
+    margin: 3rem 1rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+
+/* Footer styling */
+.footer {
+  padding: 0.5rem 0.75rem;
+  margin: 0 auto;
+  text-align: center;
+}
