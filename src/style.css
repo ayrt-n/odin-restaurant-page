@@ -86,6 +86,7 @@ a.navbar-item:hover, a.navbar-item.is-active {
   display: flex;
   flex-grow: 1;
   max-width: 900px;
+  max-height: min-content;
   margin: 2rem auto;
   border-radius: 6px;
   background-color: rgba(127, 29, 29, 0.85);
@@ -93,17 +94,47 @@ a.navbar-item:hover, a.navbar-item.is-active {
   padding: 2rem 3rem;
 }
 
-@media screen and (max-width: 425px) {
-  .main-section {
-    margin: 3rem 1rem;
-    padding: 0.75rem 1rem;
-  }
+/* Hero Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.hero-image {
+  width: 50vw;
+  max-width: 500px;
+  height: auto;
+}
+
+.hero-header {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+}
 
 /* Footer styling */
 .footer {
   padding: 0.5rem 0.75rem;
   margin: 0 auto;
   text-align: center;
+}
+
+/* Tablet Styling */
+@media screen and (max-width: 768px) {
+  .hero-image {
+    max-width: 300px;
+  }  
+}
+
+/* Mobile Styling */
+@media screen and (max-width: 425px) {
+  .main-section {
+    margin: 3rem 1rem;
+    padding: 0.75rem 1rem;
+  }
 }
