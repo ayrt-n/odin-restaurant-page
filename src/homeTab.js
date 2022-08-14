@@ -7,6 +7,7 @@ mainDiv.classList.add('main-section');
 // Create content for home page tab
 const heroDiv = document.createElement('div');
 heroDiv.classList.add('hero');
+heroDiv.classList.add('card');
 
 const heroImage = document.createElement('img');
 heroImage.src = hero;
