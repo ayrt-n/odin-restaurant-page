@@ -1,5 +1,5 @@
 import navElement from "./navbar";
-import mainDiv from "./mainSection";
+import mainDiv from "./homeTab";
 import footerElement from "./footer";
 
 const pageLoad = () => {
