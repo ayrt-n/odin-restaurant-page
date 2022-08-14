@@ -1,3 +1,5 @@
+import pizzaIcon from './pizza.png';
+
 // Create main navbar element
 const navElement = document.createElement('nav');
 navElement.classList.add('navbar');
@@ -10,7 +12,8 @@ const navLogo = document.createElement('div');
 const logo = document.createElement('img');
 navLogo.classList.add('navbar-item');
 logo.classList.add('logo');
-// Add image to logo
+logo.src = pizzaIcon;
+logo.alt = 'small cartoon pizza icon';
 
 navLogo.appendChild(logo);
 navBrand.appendChild(navLogo);
