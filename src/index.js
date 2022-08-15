@@ -1,5 +1,6 @@
 import pageLoad from './pageLoad';
 import homeDiv from './homeTab';
+import menuDiv from './menuTab';
 import contactDiv from './contactTab';
 
 pageLoad();
@@ -14,7 +15,7 @@ const tabController = (() => {
 
   const tabContent = {
     home: homeDiv,
-    menu: 'menuDiv',
+    menu: menuDiv,
     contact: contactDiv
   };
 
