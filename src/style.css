@@ -120,6 +120,42 @@ a.navbar-item:hover, a.navbar-item.is-active {
   font-size: 1.25rem;
 }
 
+/* Menu Styling */
+.menu-container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.menu-container {
+  width: 100%;
+}
+
+.menu-items-container {
+  width: 45%;
+  display: inline-block;
+}
+
+.menu-item {
+  border-bottom: 1px dashed #fff;
+  width: 100%;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.menu-name {
+  font-weight: bold;
+}
+
+.menu-price {
+  float: right;
+}
+
+.menu-preview {
+  width: 45%;
+  float: right;
+}
+
 /* Footer styling */
 .footer {
   padding: 0.5rem 0.75rem;
