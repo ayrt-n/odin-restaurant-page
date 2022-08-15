@@ -25,7 +25,8 @@ const menuOptions = ['Home', 'Menu', 'Contact'];
 
 const menuItems = menuOptions.map(item => {
   const tmp = document.createElement('a');
-  tmp.classList.add('navbar-item');
+  tmp.classList.add('navbar-item', 'tab');
+  tmp.id = item.toLowerCase()
   tmp.innerHTML = item;
   return tmp;
 })
@@ -39,17 +40,3 @@ navElement.appendChild(navBrand);
 navElement.appendChild(navMenu);
 
 export default navElement;
-
-// Structure of navElement
-// <nav class="navbar">
-//   <div class="navbar-brand">
-//     <div class="navbar-item">
-//       <img src="../src/pizza.png" alt="small cartoon pizza icon" class="logo">
-//     </div>
-//   </div>
-//   <div class="navbar-menu">
-//     <a class="navbar-item">Home</a>
-//     <a class="navbar-item">Menu</a>
-//     <a class="navbar-item">Contact</a>
-//   </div>
-// </nav>
