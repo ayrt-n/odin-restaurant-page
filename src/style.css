@@ -167,6 +167,7 @@ a.navbar-item:hover, a.navbar-item.is-active {
   padding: 0.5rem 0.75rem;
   margin: 0 auto;
   text-align: center;
+  color: #fff;
 }
 
 /* Tablet Styling */
